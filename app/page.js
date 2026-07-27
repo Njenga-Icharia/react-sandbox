@@ -24,6 +24,13 @@ export default function Home() {
           🔘  Test
         </a>
 
+        <a
+         href="/practice/FloatingSquare"
+          className="rounded-lg bg-purple-600 px-6 py-4 text-white transition hover:scale-105 hover:bg-purple-500"
+         >
+          Floating Square
+        </a>
+
 
 
       </div>

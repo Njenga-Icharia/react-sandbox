@@ -11,7 +11,7 @@ export default function FeatureTesterPage() {
   const [loading, setLoading] = useState(true);
   
   // --- STRINGS & INTERPOLATION ---
-  const developerName = 'Njenga Icharia'; 
+  const developerName = 'Njenga Icharia lmao'; 
   // [⚡ JS Concept: Template Literals using backticks and ${} injection]
   const welcomeMessage = `Developer: ${developerName} | Workspace: Practice Module`;
 
@@ -25,7 +25,7 @@ export default function FeatureTesterPage() {
         // Simulating 1.5-second network latency promise delay
         await new Promise((resolve) => setTimeout(resolve, 1500));
         
-        const serverData = "TECHNO BRAIN CMMI LEVEL 5: Build on a feature branch (njenga/feature), verify locally, and submit a Pull Request for Steven to review.";
+        const serverData = "TECHNO BRAIN CMMI LEVEL 5: Build on a feature branch (njenga/feature), verify locally, and submit a Pull Request for a Senoir to review.";
         setPolicy(serverData);
       } catch (error) {
         console.error("Failed fetching internal policy script", error);
@@ -68,7 +68,7 @@ export default function FeatureTesterPage() {
       {/* Header Block */}
       <header className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
         {/* [⚛️ React Concept: JSX rules - use className instead of class] */}
-        <h1 className="text-2xl font-bold text-gray-800">React & JS Concept Testing Area</h1>
+        <h1 className="text-2xl font-bold text-gray-800">My persoNal React & JavaScript Concept Testing Area</h1>
         <p className="text-sm text-blue-600 mt-1 font-mono">{welcomeMessage}</p>
       </header>
 
@@ -124,7 +124,7 @@ export default function FeatureTesterPage() {
         
         {/* [⚛️ React Concept: Conditional Rendering using Short-circuit evaluation (&&)] */}
         {docs.length === 0 && (
-          <p className="text-gray-400 italic text-sm">No items pushed to current array yet.</p>
+          <p className="text-gray-400 italic text-sm">Bruh. You've Pushed like NO items to current array yet.</p>
         )}
 
         <ul className="space-y-3">
@@ -151,6 +151,13 @@ export default function FeatureTesterPage() {
           })}
         </ul>
       </section>
+
+          <a href="/" className="text-blue-400 underline hover:text-blue-300">
+        ← Back to Home
+      </a>
+
+
+      
     </div>
   );
 }
