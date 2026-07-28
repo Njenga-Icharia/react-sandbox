@@ -81,9 +81,12 @@ export default function Page() {
 
       {/* 3. FOOTER */}
       <footer className="pt-6 pb-2">
-        <a href="/" className="font-semibold underline hover:opacity-80">
-          ← Back to Home
-        </a>
+        <a
+  href="/"
+  className="bg-white text-[#1e1e28] px-5 py-2 rounded-full border border-[#1e1e28] font-bold text-xs tracking-wider uppercase shadow-[3px_3px_0px_0px_#1e1e28] active:translate-x-0.5 active:translate-y-0.5 transition-all inline-block"
+>
+  Back to Home
+</a>
       </footer>
 
     </div>
