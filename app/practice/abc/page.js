@@ -1,5 +1,7 @@
 'use client';
 
+import Link from 'next/link';
+
 export default function Page() {
   return (
     <div className="min-h-screen w-full bg-[#f97316] flex flex-col items-center justify-between p-6 sm:p-10 text-[#1e1e28]">
@@ -20,16 +22,19 @@ export default function Page() {
           </div>
 
           <div className="hidden md:flex items-center gap-6 font-bold text-xs tracking-wider uppercase">
-            <a href="#" className="hover:underline">Solutions</a>
-            <a href="#" className="hover:underline">Enterprise</a>
-            <a href="#" className="hover:underline">Industries</a>
-            <a href="#" className="hover:underline">Case Studies</a>
-            <a href="#" className="hover:underline">Careers</a>
+            <Link href="/practice/abc/solutions" className="hover:underline">Solutions</Link>
+            <Link href="/practice/abc/enterprise" className="hover:underline">Enterprise</Link>
+            <Link href="/practice/abc/industries" className="hover:underline">Industries</Link>
+            <Link href="/case-studies" className="hover:underline">Case Studies</Link>
+            <Link href="/careers" className="hover:underline">Careers</Link>
           </div>
 
-          <button className="bg-[#f97316] text-white px-5 py-2 rounded-full border border-[#1e1e28] font-bold text-xs tracking-wider uppercase shadow-[3px_3px_0px_0px_#1e1e28] active:translate-x-0.5 active:translate-y-0.5 transition-all">
+          <Link 
+            href="/contact" 
+            className="bg-[#f97316] text-white px-5 py-2 rounded-full border border-[#1e1e28] font-bold text-xs tracking-wider uppercase shadow-[3px_3px_0px_0px_#1e1e28] active:translate-x-0.5 active:translate-y-0.5 transition-all inline-block text-center"
+          >
             Get In Touch
-          </button>
+          </Link>
         </nav>
 
         {/* HERO CONTENT GRID */}
@@ -55,18 +60,24 @@ export default function Page() {
             </p>
 
             <div className="flex flex-wrap gap-4 pt-2">
-              <button className="bg-[#f97316] text-white px-6 py-3 rounded-full border-2 border-[#1e1e28] font-bold text-xs uppercase tracking-wider shadow-[4px_4px_0px_0px_#1e1e28] active:translate-x-0.5 active:translate-y-0.5 transition-all">
+              <Link 
+                href="/practice/abc/solutions" 
+                className="bg-[#f97316] text-white px-6 py-3 rounded-full border-2 border-[#1e1e28] font-bold text-xs uppercase tracking-wider shadow-[4px_4px_0px_0px_#1e1e28] active:translate-x-0.5 active:translate-y-0.5 transition-all inline-block text-center"
+              >
                 Explore Solutions
-              </button>
+              </Link>
               
-              <button className="bg-transparent text-[#1e1e28] px-6 py-3 rounded-full border-2 border-[#1e1e28] font-bold text-xs uppercase tracking-wider hover:bg-[#1e1e28]/5 transition-all">
+              <Link 
+                href="/practice/abc/industries" 
+                className="bg-transparent text-[#1e1e28] px-6 py-3 rounded-full border-2 border-[#1e1e28] font-bold text-xs uppercase tracking-wider hover:bg-[#1e1e28]/5 transition-all inline-block text-center"
+              >
                 Our Capabilities
-              </button>
+              </Link>
             </div>
 
           </div>
 
-          {/* Right Column: Using your downloaded SVG */}
+          {/* Right Column: Illustration */}
           <div className="relative min-h-[300px] flex items-center justify-center p-4">
             <img 
               src="/Computer login-amico.svg" 
@@ -81,12 +92,12 @@ export default function Page() {
 
       {/* 3. FOOTER */}
       <footer className="pt-6 pb-2">
-        <a
-  href="/"
-  className="bg-white text-[#1e1e28] px-5 py-2 rounded-full border border-[#1e1e28] font-bold text-xs tracking-wider uppercase shadow-[3px_3px_0px_0px_#1e1e28] active:translate-x-0.5 active:translate-y-0.5 transition-all inline-block"
->
-  Back to Home
-</a>
+        <Link
+          href="/"
+          className="bg-white text-[#1e1e28] px-5 py-2 rounded-full border border-[#1e1e28] font-bold text-xs tracking-wider uppercase shadow-[3px_3px_0px_0px_#1e1e28] active:translate-x-0.5 active:translate-y-0.5 transition-all inline-block"
+        >
+          Back to Home
+        </Link>
       </footer>
 
     </div>
