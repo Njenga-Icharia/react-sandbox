@@ -58,7 +58,7 @@ export default function Home() {
           href="/practice/abc"
           className="rounded-lg bg-purple-600 px-6 py-4 text-white transition hover:scale-105 hover:bg-purple-500 font-medium"
         >
-          🧠 Techno Brain
+          🧠 Techno Brain Demo
         </a>
       </div>
     </main>
